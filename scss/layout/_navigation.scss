@@ -1,0 +1,28 @@
+.navigation {
+  @include maxWidth();
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  &-logo {
+    img {
+      width: 15rem;
+    }
+  }
+
+  &-links {
+    a {
+      font-size: size(sm);
+      color: color(black);
+
+      &:hover {
+        color: color(pink);
+      }
+    }
+  }
+
+  .current {
+    border-bottom: 0.1rem solid color(pink);
+    color: color(pink);
+  }
+}

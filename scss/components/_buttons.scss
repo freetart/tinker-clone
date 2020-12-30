@@ -1,0 +1,13 @@
+.btn {
+  @include textStyles();
+  background-color: color(pink);
+  color: color(white) !important;
+  padding: 1rem 2rem;
+  border: 0.1rem solid color(pink);
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: transparent;
+    color: color(pink) !important;
+  }
+}
