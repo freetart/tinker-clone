@@ -1,0 +1,54 @@
+.team {
+  @include sectionSpacing();
+  @include maxWidth();
+
+  &-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+
+    &-imgs {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-evenly;
+
+      .team-content-img {
+        position: relative;
+
+        span {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          color: color(pink);
+          font-size: size(xl);
+        }
+
+        .expert-number {
+          position: absolute;
+          top: 60%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+
+        p {
+          color: color(pink);
+          font-size: size(md);
+          text-align: center;
+        }
+      }
+    }
+
+    &-info {
+      h2 {
+        @include headingStyles();
+        font-size: size(xl);
+      }
+
+      p {
+        @include textStyles();
+        font-size: size(md);
+      }
+    }
+  }
+}

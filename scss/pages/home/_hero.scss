@@ -2,6 +2,7 @@
   @include maxWidth();
   @include sectionSpacing();
   position: relative;
+  height: 100vh;
 
   &-content {
     display: grid;
