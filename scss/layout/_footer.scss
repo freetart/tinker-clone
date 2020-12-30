@@ -1,0 +1,62 @@
+.footer {
+  padding: 2rem 2rem;
+
+  &-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    label {
+      @include textStyles();
+      display: block;
+      font-size: size(xs);
+    }
+
+    input {
+      padding: 1.6rem;
+      font-size: size(sm);
+      outline: 0;
+      border: 0;
+      border-bottom: 0.1rem solid color(pink);
+      width: 40rem;
+    }
+
+    .newsletter-container {
+      position: relative;
+    }
+
+    .newsletter-btn {
+      position: absolute;
+      top: 0.1rem;
+      right: 0.1rem;
+      bottom: 0.1rem;
+      z-index: 10;
+      padding: 1.2rem;
+      border-bottom: 0;
+    }
+
+    .social-links {
+      a {
+        @include textStyles();
+        color: color(black);
+        font-size: size(sm);
+
+        &:hover {
+          color: color(pink);
+        }
+      }
+    }
+  }
+
+  &-bottom {
+    @include flexLayout();
+    img {
+      width: 20rem;
+    }
+
+    p {
+      @include textStyles();
+      font-size: size(xs);
+    }
+  }
+}
