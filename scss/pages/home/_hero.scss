@@ -1,6 +1,7 @@
 .hero {
   @include maxWidth();
   @include sectionSpacing();
+  position: relative;
 
   &-content {
     display: grid;
@@ -12,5 +13,12 @@
       @include headingStyles();
       font-size: size(xl) + 2rem;
     }
+  }
+
+  &-img {
+    z-index: -1;
+    position: absolute;
+    top: 10%;
+    left: 35%;
   }
 }

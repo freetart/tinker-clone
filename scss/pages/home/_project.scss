@@ -1,0 +1,33 @@
+.project {
+  @include maxWidth();
+  @include sectionSpacing();
+
+  &-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+
+    &-info {
+      img {
+        width: 5rem;
+      }
+
+      h2 {
+        @include headingStyles();
+        font-size: size(xl);
+      }
+
+      p {
+        @include textStyles();
+        font-size: size(md);
+      }
+
+      p:nth-of-type(2) {
+        @include textStyles();
+        font-size: size(sm);
+        color: color(pink);
+      }
+    }
+  }
+}
