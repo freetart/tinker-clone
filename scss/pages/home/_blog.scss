@@ -1,0 +1,24 @@
+.blog {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("/images/home/earth.jpg") center center/cover no-repeat fixed;
+
+  &-content {
+    @include flexLayout();
+    @include maxWidth();
+    @include sectionSpacing();
+    text-align: left;
+
+    h2 {
+      @include headingStyles();
+      font-size: size(xl) + 2rem;
+      color: color(white);
+    }
+
+    p {
+      @include textStyles();
+      font-size: size(sm);
+      width: 70%;
+      color: color(white);
+    }
+  }
+}
