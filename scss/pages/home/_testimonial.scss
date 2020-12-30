@@ -1,0 +1,39 @@
+.testimonial {
+  @include sectionSpacing();
+  @include maxWidth();
+
+  &-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+
+    &-info {
+      img {
+        width: 30rem;
+      }
+
+      .underline {
+        width: 10rem;
+        height: 0.2rem;
+        background-color: color(pink);
+      }
+
+      blockquote {
+        @include textStyles();
+        font-size: size(lg);
+      }
+
+      p {
+        @include textStyles();
+        font-size: size(md);
+        color: color(pink);
+      }
+    }
+
+    &-img {
+      width: 80%;
+      box-shadow: 0.4rem 0.4rem 1rem #f2f2f2;
+    }
+  }
+}
