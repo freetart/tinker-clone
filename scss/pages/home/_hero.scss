@@ -1,0 +1,16 @@
+.hero {
+  @include maxWidth();
+  @include sectionSpacing();
+
+  &-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+      @include headingStyles();
+      font-size: size(xl) + 2rem;
+    }
+  }
+}
