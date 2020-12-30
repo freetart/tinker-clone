@@ -1,11 +1,11 @@
 .navigation {
-  @include maxWidth();
   display: flex;
   justify-content: space-around;
   align-items: center;
   position: sticky;
+  width: 100%;
   top: 0;
-  overflow: hidden;
+  overflow-x: hidden;
   z-index: 100;
   background-color: color(white);
 
