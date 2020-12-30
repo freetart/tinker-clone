@@ -3,6 +3,7 @@
   padding: 1rem 2rem;
   border: 0.1rem solid color(pink);
   transition: all 0.3s ease;
+  font-size: size(sm);
 }
 
 .btn-primary {
@@ -19,7 +20,6 @@
 .btn-trans {
   @extend .btn;
   color: color(pink);
-  font-size: size(sm);
 
   &:hover {
     background-color: color(pink);

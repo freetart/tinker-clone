@@ -1,0 +1,24 @@
+.services {
+  background-color: color(gray);
+
+  &-content {
+    @include maxWidth();
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+
+    &-info {
+      h2 {
+        @include headingStyles();
+        font-size: size(xl);
+        color: color(white);
+      }
+
+      p {
+        @include textStyles();
+        font-size: size(md);
+        color: color(white);
+      }
+    }
+  }
+}

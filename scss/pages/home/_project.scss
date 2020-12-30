@@ -1,6 +1,6 @@
 .project {
   @include maxWidth();
-  @include sectionSpacing();
+  // @include sectionSpacing();
 
   &-content {
     display: grid;
@@ -27,6 +27,15 @@
         @include textStyles();
         font-size: size(sm);
         color: color(pink);
+      }
+
+      &-count {
+        display: flex;
+        justify-content: flex-end;
+
+        img {
+          width: 20rem;
+        }
       }
     }
   }
