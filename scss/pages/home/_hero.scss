@@ -2,6 +2,11 @@
   @include maxWidth();
   @include sectionSpacing();
   position: relative;
+  overflow: hidden;
+
+  @include response(xxl) {
+    position: static;
+  }
 
   &-content {
     display: grid;
@@ -28,6 +33,10 @@
     position: absolute;
     top: 10%;
     left: 35%;
+
+    @include response(xxl) {
+      position: static;
+    }
 
     @include response(xxl) {
       position: static;
