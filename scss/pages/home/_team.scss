@@ -6,14 +6,24 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
+    gap: 2rem;
+
+    @include response(xxl) {
+      grid-template-columns: 1fr;
+    }
 
     &-imgs {
       display: flex;
       align-items: flex-end;
       justify-content: space-evenly;
+      flex-wrap: wrap;
 
       .team-content-img {
         position: relative;
+
+        @include response(md) {
+          padding: 2rem 0;
+        }
 
         span {
           position: absolute;

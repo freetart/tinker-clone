@@ -6,6 +6,13 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
+    gap: 2rem;
+
+    @include response(xxl) {
+      grid-template-columns: 1fr;
+      padding: 0 2rem;
+      padding-top: 2rem;
+    }
 
     &-info {
       h2 {

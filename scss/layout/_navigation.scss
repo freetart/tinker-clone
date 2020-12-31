@@ -16,6 +16,9 @@
   }
 
   &-links {
+    @include response(xl) {
+      display: none;
+    }
     a {
       font-size: size(sm);
       color: color(black);

@@ -12,6 +12,10 @@
       @include headingStyles();
       font-size: size(xl) + 2rem;
       color: color(white);
+
+      @include response(lg) {
+        font-size: size(xl);
+      }
     }
 
     p {
@@ -19,6 +23,10 @@
       font-size: size(sm);
       width: 70%;
       color: color(white);
+
+      @include response(lg) {
+        width: 100%;
+      }
     }
   }
 }

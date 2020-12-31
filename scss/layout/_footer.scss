@@ -5,6 +5,7 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 
     label {
       @include textStyles();
@@ -19,6 +20,10 @@
       border: 0;
       border-bottom: 0.1rem solid color(pink);
       width: 40rem;
+
+      @include response(md) {
+        width: 30rem;
+      }
     }
 
     .newsletter-container {
@@ -36,6 +41,10 @@
     }
 
     .social-links {
+      @include response(xl) {
+        padding: 2rem 0;
+      }
+
       a {
         @include textStyles();
         color: color(black);

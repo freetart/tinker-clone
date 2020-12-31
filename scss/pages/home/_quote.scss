@@ -9,6 +9,10 @@
     align-items: center;
     gap: 2rem;
 
+    @include response(lg) {
+      grid-template-columns: 1fr;
+    }
+
     &-info {
       h2 {
         @include textStyles();
