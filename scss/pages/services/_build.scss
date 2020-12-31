@@ -1,0 +1,119 @@
+.build {
+  background: url(/images/services/stars.svg) bottom center/contain no-repeat;
+
+  &-content {
+    @include sectionSpacing();
+    @include maxWidth();
+    .card-heading {
+      width: 70%;
+
+      h2 {
+        @include headingStyles();
+        font-size: size(xl);
+      }
+
+      .underline {
+        width: 8rem;
+        height: 0.2rem;
+        background-color: color(pink);
+      }
+
+      p {
+        @include textStyles();
+        font-size: size(xs);
+      }
+    }
+
+    .cards {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .bg-black {
+      background-color: color(black);
+      color: color(white);
+      border: 0.3rem solid color(pink);
+    }
+
+    .bg-gray {
+      background-color: color(gray);
+      color: color(white);
+      border: 0.3rem solid color(pink);
+    }
+
+    .bg-pink {
+      background-color: color(pink);
+      border: 0.3rem solid color(black);
+
+      h3 {
+        color: color(white) !important;
+      }
+    }
+
+    .bg-lightgray {
+      background-color: color(lightGray);
+      color: color(black);
+      border: 0.3rem solid color(black);
+    }
+
+    .bg-lightBlack {
+      background-color: color(lightBlack);
+      color: color(white);
+      border: 0.3rem solid color(pink);
+    }
+
+    .card {
+      padding: 2rem 2rem;
+      width: 100%;
+      margin: 0 1rem 1rem 1rem;
+
+      h3 {
+        @include headingStyles();
+        color: color(pink);
+        font-size: size(sm);
+        margin-bottom: 1rem;
+      }
+
+      ul {
+        margin-left: 1rem;
+      }
+
+      li {
+        @include textStyles();
+        margin-bottom: 1rem;
+        font-size: size(xs);
+      }
+
+      ul li::before {
+        content: "\2022";
+        color: color(white);
+        font-weight: bold;
+        display: inline-block;
+        width: 1em;
+        margin-left: -1em;
+      }
+    }
+
+    .card-row-1 {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .card-row-2 {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .card-row-3 {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .card-row-4 {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+}
