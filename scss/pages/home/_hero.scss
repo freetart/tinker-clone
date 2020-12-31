@@ -2,10 +2,10 @@
   @include maxWidth();
   @include sectionSpacing();
   position: relative;
-  overflow: hidden;
 
   @include response(xxl) {
     position: static;
+    overflow: hidden;
   }
 
   &-content {
@@ -23,6 +23,10 @@
       font-size: size(xl) + 2rem;
 
       @include response(md) {
+        font-size: size(xl) + 1rem;
+      }
+
+      @include response(sm) {
         font-size: size(xl);
       }
     }
