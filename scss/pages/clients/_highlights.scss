@@ -1,0 +1,54 @@
+.highlights {
+  padding: 5rem 0;
+
+  h2 {
+    @include headingStyles();
+    text-align: center;
+    font-size: size(xl) + 2rem;
+  }
+
+  .underline {
+    width: 25rem;
+    height: 0.2rem;
+    background-color: color(pink);
+    margin: 0 auto;
+
+    @include response(md) {
+      width: 100%;
+    }
+  }
+
+  &-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    h3 {
+      @include headingStyles();
+      font-size: size(xl) + 2rem;
+      text-align: center;
+    }
+
+    h4 {
+      @include headingStyles();
+      font-size: size(xl);
+      text-align: center;
+    }
+
+    .highlight {
+      padding: 5rem 0;
+    }
+
+    .highlight:nth-child(1) {
+      background-color: color(lightGray);
+    }
+
+    .highlight:nth-child(2) {
+      background-color: color(gray);
+      color: color(white);
+    }
+
+    .highlight:nth-child(3) {
+      background-color: color(lightGray);
+    }
+  }
+}
