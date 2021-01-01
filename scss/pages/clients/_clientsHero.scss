@@ -1,0 +1,38 @@
+.clients-hero {
+  @include sectionSpacing();
+  @include maxWidth();
+
+  &-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+
+    &-info {
+      h1 {
+        @include headingStyles();
+        font-size: size(xl) + 2rem;
+      }
+
+      h2 {
+        @include headingStyles();
+        font-size: size(xl);
+      }
+
+      p {
+        @include textStyles();
+        font-size: size(md);
+      }
+
+      small {
+        @include textStyles();
+        font-size: size(xs);
+        color: color(pink);
+      }
+    }
+
+    &-img {
+      max-width: 50%;
+      margin: 0 auto;
+    }
+  }
+}
