@@ -1,0 +1,15 @@
+.client-contact {
+  background-color: color(black);
+
+  &-content {
+    @include maxWidth();
+    @include sectionSpacing();
+    @include flexLayout();
+
+    h2 {
+      @include headingStyles();
+      font-size: size(xl);
+      color: color(white);
+    }
+  }
+}

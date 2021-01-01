@@ -1,0 +1,38 @@
+.client-quote {
+  @include sectionSpacing();
+  @include maxWidth();
+
+  h2 {
+    @include headingStyles();
+    font-size: size(xl);
+    text-align: center;
+  }
+
+  .underline {
+    width: 65rem;
+    height: 0.2rem;
+    background-color: color(pink);
+    margin: auto;
+
+    @include response(xl) {
+      width: 100%;
+    }
+  }
+
+  &-content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+
+    img {
+      width: 20rem;
+    }
+
+    p {
+      @include textStyles();
+      font-size: size(md);
+      width: 70%;
+    }
+  }
+}
