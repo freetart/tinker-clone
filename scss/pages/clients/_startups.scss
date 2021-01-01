@@ -1,0 +1,23 @@
+.startups {
+  @include maxWidth();
+  @include sectionSpacing();
+
+  &-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+
+    &-info {
+      h2 {
+        @include headingStyles();
+        font-size: size(xl);
+      }
+
+      p {
+        @include textStyles();
+        font-size: size(md);
+      }
+    }
+  }
+}
