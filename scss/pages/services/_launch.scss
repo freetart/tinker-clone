@@ -1,0 +1,47 @@
+.launch {
+  @include sectionSpacing();
+  @include maxWidth();
+
+  &-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+    align-items: center;
+
+    &-info {
+      h2 {
+        @include headingStyles();
+        font-size: size(xl);
+      }
+
+      .underline {
+        width: 35rem;
+        height: 0.2rem;
+        background-color: color(pink);
+      }
+
+      p {
+        @include textStyles();
+        font-size: size(sm);
+      }
+
+      ul {
+        margin-left: 1.5rem;
+      }
+
+      li {
+        font-size: size(xs);
+        margin-bottom: 1rem;
+      }
+
+      ul li::before {
+        content: "\2022";
+        color: color(pink);
+        font-weight: bold;
+        display: inline-block;
+        width: 1em;
+        margin-left: -1em;
+      }
+    }
+  }
+}
