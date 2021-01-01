@@ -1,6 +1,7 @@
 .services-hero {
   @include sectionSpacing();
   @include maxWidth();
+  overflow: hidden;
 
   &-content {
     display: grid;
