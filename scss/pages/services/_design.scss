@@ -8,6 +8,10 @@
     align-items: center;
     gap: 2rem;
 
+    @include response(xl) {
+      grid-template-columns: 1fr;
+    }
+
     &-info {
       h2 {
         @include headingStyles();
@@ -18,6 +22,10 @@
         width: 25rem;
         height: 0.2rem;
         background-color: color(pink);
+
+        @include response(md) {
+          width: 100%;
+        }
       }
 
       p {

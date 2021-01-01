@@ -7,6 +7,10 @@
     .card-heading {
       width: 70%;
 
+      @include response(xl) {
+        width: 100%;
+      }
+
       h2 {
         @include headingStyles();
         font-size: size(xl);
@@ -16,6 +20,10 @@
         width: 8rem;
         height: 0.2rem;
         background-color: color(pink);
+
+        @include response(md) {
+          width: 100%;
+        }
       }
 
       p {
