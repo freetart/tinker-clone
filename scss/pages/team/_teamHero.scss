@@ -1,0 +1,24 @@
+.team-hero {
+  @include maxWidth();
+  @include sectionSpacing();
+
+  &-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    align-items: center;
+
+    &-info {
+      h1 {
+        @include headingStyles();
+        font-size: size(xl) + 2rem;
+      }
+
+      p {
+        @include textStyles();
+        font-size: size(md);
+        color: color(pink);
+      }
+    }
+  }
+}

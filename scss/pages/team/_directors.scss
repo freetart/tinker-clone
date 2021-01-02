@@ -1,0 +1,68 @@
+.directors {
+  .directors-blocks {
+    width: 30rem;
+  }
+
+  h2 {
+    @include headingStyles();
+    font-size: size(xl) + 2rem;
+    text-align: center;
+  }
+
+  .underline {
+    width: 48rem;
+    height: 0.2rem;
+    background-color: color(pink);
+    margin: auto;
+
+    @include response(md) {
+      width: 100%;
+    }
+  }
+
+  &-content {
+    @include maxWidth();
+    @include sectionSpacing();
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+
+    .director {
+      background-color: color(lightgray);
+      margin: 1rem;
+
+      h3 {
+        @include headingStyles();
+        font-size: size(md);
+        margin-top: 1rem;
+      }
+
+      .director-heading {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 2rem;
+        margin-bottom: 0.5rem;
+
+        i {
+          margin-top: 1rem;
+          font-size: size(md);
+          color: color(pink);
+        }
+      }
+
+      p {
+        @include textStyles();
+        font-size: size(xs);
+        color: color(pink);
+        padding: 0 2rem;
+        margin-bottom: 1rem;
+      }
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
