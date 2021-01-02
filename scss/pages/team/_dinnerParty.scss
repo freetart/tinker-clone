@@ -1,0 +1,41 @@
+.dinner-party {
+  @include sectionSpacing();
+  @include maxWidth();
+
+  &-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+
+    &-info {
+      h2 {
+        @include headingStyles();
+        font-size: size(xl);
+      }
+
+      .underline {
+        width: 30rem;
+        height: 0.2rem;
+        background-color: color(pink);
+
+        @include response(md) {
+          width: 100%;
+        }
+      }
+
+      p {
+        @include textStyles();
+        font-size: size(md);
+      }
+    }
+
+    &-img {
+      box-shadow: 0.4rem 0.4rem 1rem #f2f2f2;
+
+      img {
+        border-radius: 0.5rem;
+      }
+    }
+  }
+}
