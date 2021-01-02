@@ -21,13 +21,20 @@
   transform: translate(-50%, -50%);
   width: 50%;
   background-color: white;
-  padding: 6rem;
+  padding: 2rem 6rem;
   border-radius: 5px;
   box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
   z-index: 10001;
 
-  @include response(xl) {
-    width: 90%;
+  @include response(xxl) {
+    width: 80%;
+  }
+
+  @include response(md) {
+    width: 100%;
+    height: 100%;
+    padding: 2rem 2rem;
+    overflow-y: scroll;
   }
 }
 
@@ -51,18 +58,18 @@
   p {
     @include textStyles();
     font-size: size(md);
-    color: color(pink);
   }
 
   form {
     .form-group {
-      margin: 2rem 0;
+      margin: 1rem 0;
     }
 
     label {
       @include textStyles();
       display: block;
-      font-size: size(md);
+      font-size: size(sm);
+      color: color(pink);
     }
 
     input {
@@ -70,15 +77,15 @@
       width: 100%;
       padding: 1.5rem;
       border: 0;
-      border-bottom: 0.2rem solid color(pink);
-      font-size: size(md);
+      border-bottom: 0.2rem solid color(lightgray);
+      font-size: size(sm);
     }
 
     textarea {
       width: 100%;
       height: 10vh;
       border: 0;
-      border-bottom: 0.2rem solid color(pink);
+      border-bottom: 0.2rem solid color(lightgray);
       font-size: size(lg);
       padding: 1.5rem;
     }
