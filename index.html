@@ -15,6 +15,43 @@
     <title>Tinker Clone</title>
   </head>
   <body>
+    <!-- modal -->
+    <aside class="modal hidden">
+      <button class="close-modal">&times;</button>
+      <div class="modal-content">
+        <h2>CONTACT US</h2>
+        <p>/* we'd love to work with you. */</p>
+        <form>
+          <div class="form-group">
+            <label for="name">What is your name?</label>
+            <input type="text" for="name" />
+          </div>
+          <div class="form-group">
+            <label for="email">What is your email?</label>
+            <input type="email" for="email" />
+          </div>
+          <div class="form-group">
+            <label for="phone">What is your phone number?</label>
+            <input type="number" for="phone" />
+          </div>
+          <div class="form-group">
+            <label for="help">What can we help you with?</label>
+            <textarea name="help"></textarea>
+          </div>
+          <div class="form-group">
+            <label for="budget">What is your budget?</label>
+            <input type="number" for="budget" />
+          </div>
+          <div class="form-group">
+            <label for="foundOut">How did you hear about tinker?</label>
+            <input type="text" for="foundOut" />
+          </div>
+
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </aside>
+    <div class="overlay hidden"></div>
     <!-- nav -->
     <nav class="navigation p-2">
       <a href="index.html" class="navigation-logo">
@@ -25,8 +62,7 @@
         <a href="services.html" class="ml-3">services</a>
         <a href="clients.html" class="ml-3">clients</a>
         <a href="team.html" class="ml-3">team</a>
-        <a href="#!" class="ml-3">tinker and tweak</a>
-        <a href="#!" class="btn btn-primary ml-3">Contact</a>
+        <a href="#!" class="btn btn-primary ml-3 show-modal">Contact</a>
       </div>
       <aside class="menu-navbar">
         <a href="#!" class="hamburger-menu">
@@ -49,10 +85,7 @@
             <a href="team.html" class="nav-link">team</a>
           </li>
           <li class="nav-item">
-            <a href="#!" class="nav-link">tinker and tweak</a>
-          </li>
-          <li class="nav-item">
-            <a href="#!" class="btn btn-primary">Contact</a>
+            <a href="#!" class="btn btn-primary show-modal">Contact</a>
           </li>
         </ul>
       </aside>

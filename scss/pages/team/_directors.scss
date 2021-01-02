@@ -33,6 +33,7 @@
     .director {
       background-color: color(lightgray);
       margin: 1rem;
+      box-shadow: 0.4rem 0.4rem 1rem #f2f2f2;
 
       h3 {
         @include headingStyles();
